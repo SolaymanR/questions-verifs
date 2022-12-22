@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <py-config>
+      packages = ['pandas', 'pathlib']
+      paths = ['tableau-question.xlsx']
+      </py-config>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <title>Questions de vérifications permis</title>
+  </head>
+  <body>
+    <py-script src="questions.py"></py-script>
+    <input type="file" id="tableau-question" name="tableau-question" accept=".xlsx" >
+    <div id="tableau"> 
+    <table>
+  
+        <caption id="titre">Examen numéro 33</caption>
+      
+      <tr> <th id="Questions">Questions</th> <th id="Réponses">Réponses</th> </tr>
+      
+      <tr> <th id="Q1">Q1</th> <th id="R1">R1</th> </tr>
+      
+      <tr> <th id="Q2">Q2</th> <th id="R2">R2</th> </tr>
+      
+      <tr> <th id="Q3">Q3</th> <th id="R3">R3</th> </tr>
+      
+      </table>
+      </div>
+
+  </body>
+</html>
